@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login & Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h2 id="form-title">Register</h2> 
+
+      <form id="auth-form" action="register.php" method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+
+        <button type="submit">Register</button>
+
+        <p id="toggle-text">
+          Already have an account? <span onclick="toggleForm()">Login</span>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
